@@ -1,0 +1,114 @@
+$location-border-radius-mobile: 2vw;
+$location-border-radius-desktop: 0.6vw;
+
+.locations {
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.location {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vw;
+  padding-top: 3.5vw;
+  padding-bottom: 3.5vw;
+  border-radius: $location-border-radius-mobile;
+  width: 55vw;
+  background-color: $gray-dark;
+  display: block;
+  color: $black;
+  background-color: $white;
+  text-decoration: none;
+  box-shadow: 0 0 30px rgba($black, 0.2);
+  cursor: pointer;
+  outline: none;
+
+  @include media-breakpoint-up(lg) {
+    margin-right: unset;
+    margin-left: unset;
+    margin-bottom: 0;
+    padding-top: 2vw;
+    padding-bottom: 1.3vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    width: auto;
+    border-radius: $location-border-radius-desktop;
+  }
+
+  &:nth-child(2) {
+    @include media-breakpoint-up(lg) {
+      margin-right: 3.5vw;
+      margin-left: 3.5vw;
+    }
+  }
+
+  &--south {
+    position: relative;
+    cursor: auto;
+
+    &::before {
+      content: attr(data-soon);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4vw;
+      color: $white;
+      background-color: $yellow;
+      border-radius: $location-border-radius-mobile;
+      opacity: 0;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2vw;
+        border-radius: $location-border-radius-desktop;
+      }
+
+      @include hover {
+        opacity: 1;
+      }
+
+      @include active {
+        opacity: 1;
+      }
+
+      @include focus {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include hover {
+    box-shadow: 0 0 30px rgba($yellow, 0.3);
+  }
+
+  @include active {
+    box-shadow: 0 0 30px rgba($yellow, 0.3);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 6vw;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.2vw;
+      line-height: 2.5vw;
+    }
+  }
+
+  small {
+    font-size: 3vw;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2vw;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.support {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  color: $white;
+  background-color: $blue;
+  text-align: center;
+
+  html[class~="ie"] & {
+    display: block;
+  }
+
+  &-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &-list {
+    display: inline-block;
+  }
+
+  &-link {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-block;
+
+    @include hover {
+      opacity: 0.6;
+    }
+
+    @include active {
+      opacity: 0.6;
+    }
+
+    img {
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  h1 {
+
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

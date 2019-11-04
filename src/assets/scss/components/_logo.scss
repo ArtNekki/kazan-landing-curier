@@ -1,0 +1,12 @@
+.logo {
+
+  img {
+    width: 135px;
+    height: 78px;
+
+    @include media-breakpoint-up(lg) {
+      width: 8.8vw;
+      height: 5vw;
+    }
+  }
+}

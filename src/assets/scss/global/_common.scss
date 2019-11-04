@@ -1,9 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 html,
 body {
   height: 100%;
-  font-family: $font-family;
+  font-family: $base-font-family;
   font-size: 13px;
-  line-height: 14px;
-  color: $gray-dark;
+  //line-height: 14px;
+  color: $black;
   background-color: $gray;
 }

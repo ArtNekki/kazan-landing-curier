@@ -1,0 +1,215 @@
+.page-main {
+  position: relative;
+  margin-top: 0;
+  padding-top: 57vw;
+  padding-bottom: 45vw;
+  text-align: center;
+  background-image: url("../../img/content/bg-mobile.svg");
+  background-size: 100% auto;
+  background-position: -0.2vw 9.5vw;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 25vw;
+    padding-top: 25.6vw;
+    padding-bottom: 40vw;
+    background-image: url("../../img/content/bg.svg");
+    background-size: contain;
+    background-position: -1.5vw 4vw;
+  }
+
+  &-inner {
+    @extend .container;
+  }
+
+  &-mobile-bus {
+    position: absolute;
+    top: 4.9vw;
+    left: 4.15vw;
+    transform: rotate3d(0, 0, 1, 0deg);
+    display: block;
+    width: 20.15vw;
+    height: 11vw;
+    background-image: url("../../img/svg/bus-mobile.svg");
+    background-repeat: no-repeat;
+
+    .page--loading & {
+      animation-play-state: paused !important;
+    }
+
+    animation-name: move-mobile-bus;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    i {
+      position: relative;
+      transform: translate3d(21.7vw, -2.7vw, 0);
+      display: block;
+      width: 62.9vw;
+      height: 10vw;
+      opacity: 0;
+      visibility: hidden;
+      background-image: url("../../img/svg/bus-label-mobile.svg");
+      background-repeat: no-repeat;
+
+      .page--loading & {
+        animation-play-state: paused !important;
+      }
+
+      animation: fade-in;
+      animation-duration: 0.5s;
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &-bus {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: -1.55vw;
+      left: 14.1vw;
+      transform: translate3d(-100vw, 18vw, 0);
+      display: block;
+      width: 9vw;
+      height: 5vw;
+      background-image: url("../../img/svg/bus.svg");
+      background-repeat: no-repeat;
+
+      .page--loading & {
+        animation-play-state: paused !important;
+      }
+
+      animation-name: move-bus;
+      animation-delay: 0.5s;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    i {
+
+      @include media-breakpoint-up(lg) {
+        position: relative;
+        transform: translate3d(9.8vw, -1vw, 0);
+        display: block;
+        width: 22.4vw;
+        height: 4vw;
+        opacity: 0;
+        visibility: hidden;
+        background-image: url("../../img/svg/bus-label.svg");
+        background-repeat: no-repeat;
+
+        .page--loading & {
+          animation-play-state: paused !important;
+        }
+
+        animation: fade-in;
+        animation-duration: 0.5s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &-title {
+    margin-top: 9vw;
+    margin-bottom: 4vw;
+    font-size: 5vw;
+    line-height: 6vw;
+    font-weight: 400;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 4vw;
+      margin-bottom: 2.6vw;
+      font-size: 2.8vw;
+      line-height: 3.5vw;
+    }
+
+    br {
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+
+    i {
+      font-family: $utils-font-family;
+      font-style: normal;
+    }
+  }
+
+  &-text {
+    margin-top: 22vw;
+    margin-bottom: 5vw;
+    font-size: 5vw;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 3.5vw;
+      margin-bottom: 2.3vw;
+      font-size: 1.4vw;
+    }
+
+    br {
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+  }
+
+  &-button {
+    padding: 3vw 6vw;
+    font-size: 6vw;
+    color: $black;
+    background-color: $yellow;
+    border: none;
+    border-radius: 2vw;
+    box-shadow: 0 0 30px rgba($black, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.8vw 3.5vw 2vw;
+      font-size: 3.7vw;
+      border-radius: 1vw;
+    }
+
+    @include hover {
+      background-color: lighten($yellow, 10%);
+      box-shadow: 0 0 30px rgba($yellow, 0.4);
+    }
+
+    @include active {
+      background-color: lighten($yellow, 10%);
+      box-shadow: 0 0 30px rgba($yellow, 0.4);
+    }
+
+    &--desktop {
+      display: none;
+
+      @include media-breakpoint-up(lg) {
+        display: inline-block;
+      }
+    }
+
+    &--mobile {
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+  }
+
+  html[class~="ie"] & {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

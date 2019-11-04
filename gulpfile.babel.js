@@ -13,7 +13,7 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
-import svgSprite     from 'gulp-svg-sprite';
+// import svgSprite     from 'gulp-svg-sprite';
 import svgmin        from 'gulp-svgmin';
 import cheerio       from 'gulp-cheerio';
 import replace       from 'gulp-replace';
@@ -180,13 +180,13 @@ function svg() {
         parserOptions: {xmlMode: true}
     }))
     .pipe(replace('&gt;', '>'))
-    .pipe(svgSprite({
-        mode: {
-            symbol: {
-                sprite: "sprite.svg"
-            }
-        }
-    }))
+    // .pipe(svgSprite({
+    //     mode: {
+    //         symbol: {
+    //             sprite: "sprite.svg"
+    //         }
+    //     }
+    // }))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
