@@ -17,9 +17,11 @@
     flex-direction: column;
     justify-content: center;
 
-    @include media-breakpoint-up(lg) {
-      flex-direction: row;
-      justify-content: space-between;
+    .page-inner--promo {
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 
@@ -174,6 +176,27 @@
           height: 0.7vw;
         }
       }
+    }
+  }
+
+  .page-footer-text {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-footer-link {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 25px;
+    color: $white;
+
+    &--no-underline {
+      text-decoration: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 
