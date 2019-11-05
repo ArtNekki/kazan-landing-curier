@@ -1,12 +1,19 @@
 .logo {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
 
   img {
     width: 135px;
     height: 78px;
 
-    @include media-breakpoint-up(lg) {
-      width: 8.8vw;
-      height: 5vw;
+    .logo--flex & {
+      @include media-breakpoint-up(lg) {
+        width: 8.8vw;
+        height: 5vw;
+      }
     }
   }
 }

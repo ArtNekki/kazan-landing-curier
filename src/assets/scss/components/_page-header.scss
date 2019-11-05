@@ -15,11 +15,51 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    height: 125px;
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
       height: auto;
+    }
+  }
+
+  &-tel {
+    position: relative;
+    font-size: 30px;
+    color: $black;
+    text-decoration: none;
+
+    @include media-breakpoint-up(md) {
+      margin-left: auto;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-right: 40px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &::before {
+      content: "";
+      width: 14px;
+      height: 42px;
+      display: inline-block;
+      background-image: url("../../img/svg/phone-black.svg");
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  &-btn {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
     }
   }
 

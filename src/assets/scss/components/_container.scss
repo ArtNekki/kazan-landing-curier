@@ -6,7 +6,25 @@
   padding-right: 15px;
   padding-left: 15px;
 
+    .page-inner--promo & {
+      @include media-breakpoint-up(lg) {
+        max-width:  62vw;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      max-width:  map-get($container-max-widths, sm);
+    }
+
+    @include media-breakpoint-up(md) {
+      max-width:  map-get($container-max-widths, md);
+    }
+
     @include media-breakpoint-up(lg) {
-      max-width:  62vw;
+      max-width:  map-get($container-max-widths, lg);
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width:  map-get($container-max-widths, xl);
     }
 }
