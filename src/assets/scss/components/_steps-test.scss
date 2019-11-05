@@ -29,6 +29,7 @@
     @include media-breakpoint-up(md) {
       margin-left: calc(#{$icon-width} + #{$icon-space});
       margin-bottom: 40px;
+      font-size: 48px;
       text-align: left;
     }
   }
@@ -60,6 +61,7 @@
 
       @include media-breakpoint-up(md) {
         margin-bottom: 0;
+        font-size: 43px;
       }
     }
 
