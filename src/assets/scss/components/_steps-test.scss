@@ -1,0 +1,84 @@
+.steps-test {
+  $icon-width: 157px;
+  $icon-space: 45px;
+
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    margin-top: -120px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 55px;
+  }
+
+  &-inner {
+    //@extend .container;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &-title {
+    margin-bottom: 80px;
+    font-size: 42px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      margin-left: calc(#{$icon-width} + #{$icon-space});
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-item {
+    margin-bottom: 78px;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  &-info {
+
+    h3 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 40px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
+
+  &-icon {
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    width: 157px;
+    height: 157px;
+
+    @include media-breakpoint-up(sm) {
+      margin-right: 45px;
+      margin-bottom: 0;
+    }
+  }
+}

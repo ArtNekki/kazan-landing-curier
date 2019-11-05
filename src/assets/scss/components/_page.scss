@@ -10,11 +10,15 @@
 }
 
 .page-inner {
-  height: 1000px;
-  background-color: $gray;
+  //height: 1000px;
+
   background-repeat: no-repeat;
   background-size: 1702px auto;
   background-position: -88px 60px;
+
+  &--promo {
+    background-color: $gray;
+  }
 
   html[class~="ie"] & {
     position: fixed;
