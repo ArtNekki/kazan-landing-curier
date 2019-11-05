@@ -15,10 +15,10 @@
     background-image:  url("../img/content/banner-test-marker.svg"), url("../img/content/banner-test-bus.svg"), url("../img/content/banner-test-path.svg"), url("../img/content/banner-test.png");
     background-size: 69px 119px, 156px 100px, 880px auto, cover;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: calc(50% + 333px) 48%, calc(50% - 278px) 54.9%, 51% 64.3%, 50% 0;
+    background-position: calc(50% + 341px) 48%, calc(50% - 299px) 56.9%, 51% 64.3%, 50% 0;
   }
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     background-position: calc(50% + 439px) 53%, calc(50% - 373px) 61.3%, 51% 64.3%, 50% 0;
   }
 
