@@ -3,9 +3,25 @@
   padding-bottom: 15px;
   background-color: $white;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: 1.7vw;
-    padding-bottom: 1vw;
+  //@include media-breakpoint-up(lg) {
+  //  padding-top: 1.7vw;
+  //  padding-bottom: 1vw;
+  //}
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 2px 0 rgba($black, 0.2);
+
+    @include media-breakpoint-up(sm) {
+      height: 125px;
+    }
   }
 
   &-inner {
@@ -16,7 +32,7 @@
     justify-content: space-between;
     flex-direction: column;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       flex-direction: row;
       height: auto;
     }
@@ -24,9 +40,13 @@
 
   &-tel {
     position: relative;
-    font-size: 30px;
+    font-size: 18px;
     color: $black;
     text-decoration: none;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 30px;
+    }
 
     @include media-breakpoint-up(md) {
       margin-left: auto;
@@ -44,10 +64,14 @@
       content: "";
       width: 14px;
       height: 42px;
-      display: inline-block;
+      display: none;
       background-image: url("../../img/svg/phone-black.svg");
       background-repeat: no-repeat;
       vertical-align: middle;
+
+      @include media-breakpoint-up(sm) {
+        display: inline-block;
+      }
     }
 
     span {

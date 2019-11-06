@@ -3,7 +3,7 @@
   padding-bottom: 33px;
   font-family: $secondary-font-family;
   color: $white;
-  background-color: $black;
+  background-color: #2E2D2C;
 
   @include media-breakpoint-up(lg) {
     padding-top: 2.6vw;
@@ -181,8 +181,8 @@
 
   .page-footer-text {
     margin-top: 0;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .page-footer-link {
