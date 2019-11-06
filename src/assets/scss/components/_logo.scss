@@ -6,8 +6,13 @@
   }
 
   img {
-    width: 135px;
-    height: 78px;
+    width: 120px;
+    height: 50px;
+
+    @include media-breakpoint-up(sm) {
+      width: 135px;
+      height: 78px;
+    }
 
     .logo--flex & {
       @include media-breakpoint-up(lg) {
