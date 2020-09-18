@@ -6,6 +6,8 @@ import './utils/polyfill';
 function startAnimation() {
   var elements = $('.animated');
 
+  console.log('elements', elements);
+
   elements.each(function()  {
     var elem = $(this);
 

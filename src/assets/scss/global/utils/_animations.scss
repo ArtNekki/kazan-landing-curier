@@ -33,10 +33,10 @@
   }
 }
 
-.animated {
-  &:not(&--visible) {
-    visibility: hidden;
-  };
-
-  animation-delay: 0.5s;
-}
+//.animated {
+//  &:not(&--visible) {
+//    visibility: hidden;
+//  };
+//
+//  animation-delay: 0.5s;
+//}

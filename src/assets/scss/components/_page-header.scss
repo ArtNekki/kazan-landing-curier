@@ -79,6 +79,22 @@
     }
   }
 
+  &-contact {
+    position: relative;
+    z-index: 5;
+  }
+
+  &-contact small {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 10px;
+    color: rgba($black, 0.6);
+
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+  }
+
   &-btn {
     display: none;
 

@@ -4,7 +4,7 @@
   padding-top: 57vw;
   padding-bottom: 45vw;
   text-align: center;
-  background-image: url("../../img/content/bg-mobile.svg");
+  //background-image: url("../../img/content/bg-mobile.svg");
   background-size: 100% auto;
   background-position: -0.2vw 9.5vw;
   background-repeat: no-repeat;
@@ -15,9 +15,9 @@
     margin-top: 25vw;
     padding-top: 25.6vw;
     padding-bottom: 40vw;
-    background-image: url("../../img/content/bg.svg");
-    background-size: contain;
-    background-position: -1.5vw 4vw;
+    background-image: url("../../img/content/path.svg");
+    //background-size: contain;
+    background-position: 0 4vw;
   }
 
   &-inner {
@@ -75,9 +75,11 @@
 
     @include media-breakpoint-up(lg) {
       position: absolute;
-      top: -1.55vw;
-      left: 14.1vw;
-      transform: translate3d(-100vw, 18vw, 0);
+      top: -0.55vw;
+      left: 22.1vw;
+      //top: -1.55vw;
+      //left: 14.1vw;
+      transform: translate3d(-100vw, 40vw, 15vw);
       display: block;
       width: 9vw;
       height: 5vw;
@@ -127,7 +129,7 @@
     font-weight: 400;
 
     @include media-breakpoint-up(lg) {
-      margin-top: 4vw;
+      margin-top: 2vw;
       margin-bottom: 2.6vw;
       font-size: 2.8vw;
       line-height: 3.5vw;
@@ -168,7 +170,7 @@
     padding: 3vw 6vw;
     font-size: 6vw;
     color: $black;
-    background-color: $yellow;
+    background-color: $white;
     border: none;
     border-radius: 2vw;
     box-shadow: 0 0 30px rgba($black, 0.2);
@@ -183,13 +185,13 @@
     }
 
     @include hover {
-      background-color: lighten($yellow, 10%);
-      box-shadow: 0 0 30px rgba($yellow, 0.4);
+      background-color: lighten($white, 10%);
+      box-shadow: 0 0 30px rgba($white, 0.4);
     }
 
     @include active {
-      background-color: lighten($yellow, 10%);
-      box-shadow: 0 0 30px rgba($yellow, 0.4);
+      background-color: lighten($white, 10%);
+      box-shadow: 0 0 30px rgba($white, 0.4);
     }
 
     &--desktop {
