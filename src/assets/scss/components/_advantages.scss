@@ -4,7 +4,7 @@
   padding: 0;
   list-style: none;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,10 +16,10 @@
   }
 
   &-item svg {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    width: 120px;
-    height: 120px;
+    margin-top: 11vw;
+    margin-bottom: 4vw;
+    width: 25vw;
+    height: 25vw;
 
     @include media-breakpoint-up(sm) {
       width: 5vw;
@@ -29,8 +29,8 @@
 
   b {
     display: block;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 7.5vw;
+    line-height: 7.5vw;
     text-transform: uppercase;
     font-weight: 400;
 
@@ -41,8 +41,10 @@
   }
 
   p {
-    font-size: 14px;
-    line-height: 16px;
+    margin: 0;
+    margin-top: 1.5vw;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
 
     @include media-breakpoint-up(sm) {
       font-size: 1vw;

@@ -100,10 +100,13 @@
   }
 
   &-row {
-    display: flex;
 
-    & > *:not(:last-child) {
-      margin-right: 5px;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+
+      & > *:not(:last-child) {
+        margin-right: 5px;
+      }
     }
   }
 
@@ -184,14 +187,32 @@
 }
 
 .form--test-drive {
+  padding-right: 5vw;
+  padding-left: 5vw;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .form-group--checkbox {
+    margin-top: 3vw;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1vw;
+      margin-left: 20.2vw;
+    }
+  }
 
   .form-title {
-    margin-top: 8vw;
-    font-size: 20vw;
+    margin-top: 21vw;
+    font-size: 7vw;
     //font-weight: 700;
     text-transform: unset;
 
     @include media-breakpoint-up(lg) {
+      margin-top: 7vw;
       font-size: 3vw;
     }
 
@@ -205,15 +226,25 @@
   }
 
   .form-text {
-    margin-bottom: 4vw;
-    font-size: 1vw;
+    margin-bottom: 5vw;
+    font-size: 1.5vw;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1vw;
+    }
   }
 
   .form-btn {
-    padding: 1.5vw 4vw;
-    margin-top: 3vw;
+    margin-top: 4vw;
+    padding: 3vw 4vw;
     width: auto;
+    font-size: 5vw;
     background-color: $yellow;
-    border-radius: 10px;
+    border-radius: 1.5vw;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 3vw;
+      padding: 1.5vw 4vw;
+    }
   }
 }

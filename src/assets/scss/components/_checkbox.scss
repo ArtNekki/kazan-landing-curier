@@ -5,8 +5,8 @@
     margin-bottom: 0;
     display: flex;
     align-items: center;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 2vw;
+    line-height: 2.1vw;
     color: #817f7d;
     cursor: pointer;
 
@@ -18,8 +18,8 @@
       content: '';
       margin-right: 10px;
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: 3vw;
+      height: 3vw;
       flex-shrink: 0;
       border: 2px solid #817f7d;
       border-radius: 3px;
@@ -34,10 +34,10 @@
     &::after {
       content: '';
       position: absolute;
-      top: 3px;
-      left: 7px;
-      width: 7px;
-      height: 12px;
+      top: 0.4vw;
+      left: 0.8vw;
+      width: 1.2vw;
+      height: 1.8vw;
       display: none;
       flex-shrink: 0;
       border: 3px solid #817f7d;

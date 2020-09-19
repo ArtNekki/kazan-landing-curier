@@ -4,8 +4,8 @@
   height: 34px;
   width: 100%;
   font-family: $secondary-font-family;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 2vw;
+  line-height: 2.1vw;
   color: $gray-dark;
   background-color: $white;
   border-radius: 5px;
@@ -34,6 +34,12 @@
   .form--test-drive & {
     padding-right: 15px;
     padding-left: 15px;
-    height: 3.3vw;
+    height: 8vw;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 3.3vw;
+    }
   }
 }
