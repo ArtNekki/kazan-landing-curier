@@ -1,5 +1,6 @@
 .partners {
   margin: 0;
+  margin-top: 4vw;
   padding: 0;
   list-style: none;
 
@@ -7,7 +8,9 @@
     display: inline-block;
 
     @include media-breakpoint-up(md) {
-      display: block;
+      margin-bottom: 3vw;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -15,5 +18,14 @@
     margin: 5px 10px;
     display: inline-block;
     vertical-align: top;
+
+    &:not(:last-child) {
+      margin-right: 2vw;
+    }
+  }
+
+  svg {
+    width: 10vw;
+    height: 2vw;
   }
 }
