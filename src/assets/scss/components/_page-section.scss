@@ -6,21 +6,21 @@
     //margin-top: 80px;
   }
 
-  &--partners {
-    @include media-breakpoint-up(md) {
-      background-color: $white;
-    }
-  }
+  //&--partners {
+  //  @include media-breakpoint-up(md) {
+  //    background-color: $white;
+  //  }
+  //}
 
   @include media-breakpoint-up(xl) {
     margin-top: 10vw;
   }
 
-  &--partners &-inner {
-    padding: 5vw;
-    border-radius: 30px;
-    background-color: $white;
-  }
+  //&--partners &-inner {
+  //  padding: 5vw;
+  //  border-radius: 30px;
+  //  background-color: $white;
+  //}
 
   //&--advantages {
   //  margin-top: -10vw;
