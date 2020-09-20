@@ -6,8 +6,6 @@ import './utils/polyfill';
 function startAnimation() {
   var elements = $('.animated');
 
-  console.log('elements', elements);
-
   elements.each(function()  {
     var elem = $(this);
 
@@ -89,7 +87,7 @@ $(document).ready(function() {
   });
 
   // Change value in input
-  $('#place-count').on('input', function() {
+  $('#place-count, #place-count-mobile').on('input', function() {
     var isVal = $(this).val().length;
     var btn = $(this).parents('.form-main').find('[type="submit"]');
 

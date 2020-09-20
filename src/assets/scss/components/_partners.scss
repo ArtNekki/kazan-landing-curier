@@ -7,7 +7,7 @@
   &-group {
     display: inline-block;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       margin-bottom: 3vw;
       display: flex;
       justify-content: center;
@@ -28,7 +28,7 @@
     width: 26vw;
     height: 10vw;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       width: 10vw;
       height: 2vw;
     }

@@ -50,6 +50,13 @@
       border-left: none;
       transform: rotate3d(0, 0, 1, 45deg);
 
+      @include media-breakpoint-up(lg) {
+        top: 2px;
+        left: 4px;
+        width: 7px;
+        height: 9px;
+
+      }
     }
   }
 
