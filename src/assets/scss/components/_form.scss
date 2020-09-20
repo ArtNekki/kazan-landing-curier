@@ -103,6 +103,11 @@
 
     @include media-breakpoint-up(lg) {
       display: flex;
+      justify-content: space-between;
+
+      & > * {
+        flex-grow: 1;
+      }
 
       & > *:not(:last-child) {
         margin-right: 5px;
@@ -202,6 +207,7 @@
     @include media-breakpoint-up(lg) {
       margin-top: 1vw;
       margin-left: 20.2vw;
+      text-align: left;
     }
   }
 
@@ -223,6 +229,20 @@
     @include media-breakpoint-up(xxl) {
       margin-bottom: 1vw;
     }
+
+    br {
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+    br:nth-of-type(2) {
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
   }
 
   .form-text {
@@ -230,6 +250,7 @@
     font-size: 1.5vw;
 
     @include media-breakpoint-up(lg) {
+      margin-bottom: 3vw;
       font-size: 1vw;
     }
   }
@@ -245,6 +266,8 @@
     @include media-breakpoint-up(lg) {
       margin-top: 3vw;
       padding: 1.5vw 4vw;
+      font-size: 2vw;
+      border-radius: 0.5vw;
     }
   }
 }

@@ -10,6 +10,11 @@
     color: #817f7d;
     cursor: pointer;
 
+    @include media-breakpoint-up(lg) {
+      font-size: 1vw;
+      line-height: 1vw;
+    }
+
     .checkbox--no-pointer-events & {
       pointer-events: none;
     }
@@ -24,7 +29,7 @@
       border: 2px solid #817f7d;
       border-radius: 3px;
 
-      .checkbox--sm & {
+      @include media-breakpoint-up(lg) {
         width: 15px;
         height: 15px;
       }

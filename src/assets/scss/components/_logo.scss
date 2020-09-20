@@ -9,16 +9,16 @@
     width: 120px;
     height: 50px;
 
-    @include media-breakpoint-up(sm) {
-      width: 135px;
-      height: 78px;
+    @include media-breakpoint-up(lg) {
+      width: 8vw;
+      height: auto;
     }
 
-    .logo--flex & {
-      @include media-breakpoint-up(lg) {
-        width: 8.8vw;
-        height: 5vw;
-      }
-    }
+    //.logo--flex & {
+    //  @include media-breakpoint-up(lg) {
+    //    width: 8.8vw;
+    //    height: 5vw;
+    //  }
+    //}
   }
 }

@@ -13,6 +13,11 @@
   &-item {
     margin-right: 2.5vw;
     margin-left: 2.5vw;
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 1vw;
+      margin-left: 1vw;
+    }
   }
 
   &-item svg {
@@ -21,10 +26,12 @@
     width: 25vw;
     height: 25vw;
 
-    //@include media-breakpoint-up(sm) {
-    //  width: 5vw;
-    //  height: 5vw;
-    //}
+    @include media-breakpoint-up(lg) {
+      margin-top: 3vw;
+      margin-bottom: 1.5vw;
+      width: 6vw;
+      height: 6vw;
+    }
   }
 
   b {
@@ -34,10 +41,10 @@
     text-transform: uppercase;
     font-weight: 400;
 
-    //@include media-breakpoint-up(sm) {
-    //  font-size: 2vw;
-    //  line-height: 2vw;
-    //}
+    @include media-breakpoint-up(lg) {
+      font-size: 2vw;
+      line-height: 2vw;
+    }
   }
 
   p {
@@ -46,9 +53,10 @@
     font-size: 3.5vw;
     line-height: 3.5vw;
 
-    //@include media-breakpoint-up(sm) {
-    //  font-size: 1vw;
-    //  line-height: 1.2vw;
-    //}
+    @include media-breakpoint-up(lg) {
+      margin-top: 0.5vw;
+      font-size: 1vw;
+      line-height: 1.2vw;
+    }
   }
 }

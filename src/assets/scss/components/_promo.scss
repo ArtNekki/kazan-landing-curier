@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  padding-top: 10vw;
+  padding-top: 18vw;
   padding-bottom: 33vw;
   overflow: hidden;
 
@@ -64,7 +64,7 @@
       padding-bottom: 3vw;
       padding-left: 0.5vw;
       border-radius: 25px;
-      background-color: transparent;
+      //background-color: transparent;
       box-shadow: none;
       border-radius: 0;
     }
@@ -75,18 +75,21 @@
       text-align: left;
     }
 
-    //&::before {
-    //  content: "";
-    //  position: absolute;
-    //  top: 0;
-    //  left: -4.75vw;
-    //  z-index: -1;
-    //  width: calc(100% + 9.5vw);
-    //  height: 100%;
-    //  background-color: $white;
-    //  border-radius: 2vw;
-    //  box-shadow: 0 0 20px 0 rgba($black, 0.2);
-    //}
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -4.75vw;
+      z-index: -1;
+      width: calc(100% + 9.5vw);
+      height: 100%;
+      background-color: $white;
+      border-radius: 2vw;
+      box-shadow: 0 0 20px 0 rgba($black, 0.2);
+
+      @include media-breakpoint-up(lg) {
+        content: "";
+      }
+    }
   }
 
   &-logo {
@@ -112,7 +115,7 @@
     line-height: 4.5vw;
 
     @include media-breakpoint-up(lg) {
-      margin-top: 20px;
+      margin-top: 0;
       font-size: 2vw;
       line-height: 2vw;
     }
@@ -124,7 +127,7 @@
 
   &-content {
     position: relative;
-    padding-top: 24vw;
+    padding-top: 16vw;
     //margin-top: -5vw;
     //padding: 15vw 0;
     text-align: center;

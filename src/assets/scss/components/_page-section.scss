@@ -20,6 +20,12 @@
     padding: 7vw;
     border-radius: 8vw;
     background-color: $white;
+
+      @include media-breakpoint-up(lg) {
+        padding: 2vw;
+        border-radius: 0;
+        background-color: transparent;
+      }
   }
 
   //&--advantages {
