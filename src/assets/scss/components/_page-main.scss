@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 0;
   padding-top: 40vw;
-  padding-bottom: 45vw;
+  padding-bottom: 29vw;
   text-align: center;
   background-image: url("../../img/content/bg-mobile.svg");
   background-size: 100% auto;
@@ -222,6 +222,10 @@
   &-button--bottom {
     margin-top: 7vw;
     background-color: $yellow;
+
+    &.page-main-button--mobile {
+      margin-top: 11vw;
+    }
 
     @include hover {
       background-color: lighten($yellow, 10%);

@@ -25,7 +25,12 @@
   }
 
   svg {
-    width: 10vw;
-    height: 2vw;
+    width: 26vw;
+    height: 10vw;
+
+    @include media-breakpoint-up(md) {
+      width: 10vw;
+      height: 2vw;
+    }
   }
 }
