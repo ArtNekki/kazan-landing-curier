@@ -1,6 +1,6 @@
 .page-footer {
-  padding-top: 37px;
-  padding-bottom: 33px;
+  padding-top: 7vw;
+  padding-bottom: 6vw;
   font-family: $secondary-font-family;
   color: $white;
   background-color: #2E2D2C;
@@ -33,7 +33,7 @@
     text-align: center;
 
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 2vw;
 
       @include media-breakpoint-up(lg) {
         margin-bottom: 0;
@@ -42,11 +42,18 @@
     }
   }
 
+  .page-footer-col--logo svg {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    width: 35vw;
+    display: block;
+  }
+
   &-contact {
     position: relative;
     display: inline-block;
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 3.4vw;
+    line-height: 6vw;
     color: rgba($white, 0.8);
 
     @include media-breakpoint-up(lg) {
@@ -73,11 +80,11 @@
       text-decoration: none;
 
       @include hover {
-        text-decoration: underline;
+        color: lighten($white, 0.7);
       }
 
       @include active {
-        text-decoration: underline;
+        color: lighten($white, 10%);
       }
     }
 
@@ -176,6 +183,10 @@
           height: 0.7vw;
         }
       }
+    }
+
+    &--sm {
+      font-size: 3vw;
     }
   }
 
