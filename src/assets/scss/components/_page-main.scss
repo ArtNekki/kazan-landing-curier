@@ -33,7 +33,7 @@
 
   &-inner {
     @extend .container;
-    margin-bottom: 22vw;
+    margin-bottom: 20vw;
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 0;
@@ -227,7 +227,7 @@
   }
 
   &-button--bottom {
-    margin-top: 7vw;
+    //margin-top: 7vw;
     background-color: $yellow;
 
     @include media-breakpoint-up(lg) {
