@@ -3,12 +3,12 @@
   text-align: center;
 
   @include media-breakpoint-up(lg) {
-    margin-top: 8vw;
-  }
-
-  @include media-breakpoint-up(xxl) {
     margin-top: 9vw;
   }
+
+  //@include media-breakpoint-up(xxl) {
+  //  margin-top: 9vw;
+  //}
 
   //@include media-breakpoint-up(xl) {
   //  margin-top: 6.5vw;
