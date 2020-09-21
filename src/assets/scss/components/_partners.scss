@@ -5,12 +5,15 @@
   list-style: none;
 
   &-group {
-    display: inline-block;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 3vw;
-      display: flex;
-      justify-content: center;
     }
   }
 
@@ -22,6 +25,12 @@
     &:not(:last-child) {
       margin-bottom: 1vw;
       margin-right: 2vw;
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:not(:last-child) {
+        margin-right: 1.2vw;
+      }
     }
   }
 
