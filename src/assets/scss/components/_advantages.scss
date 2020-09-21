@@ -13,15 +13,17 @@
   &-item {
     margin-right: 2.5vw;
     margin-left: 2.5vw;
+    margin-bottom: 15vw;
 
     @include media-breakpoint-up(lg) {
       margin-right: 1vw;
       margin-left: 1vw;
+      margin-bottom: 0;
     }
   }
 
   &-item svg {
-    margin-top: 11vw;
+    //margin-top: 11vw;
     margin-bottom: 4vw;
     width: 25vw;
     height: 25vw;

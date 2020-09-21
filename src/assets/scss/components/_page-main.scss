@@ -27,12 +27,17 @@
     padding-top: 25.6vw;
     padding-bottom: 18vw;
     background-image: url("../../img/content/bg.svg");
-    background-size: contain;
+    //background-size: c;
     background-position: 0 4vw;
   }
 
   &-inner {
     @extend .container;
+    margin-bottom: 22vw;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
   }
 
   &-mobile-bus {
@@ -229,9 +234,9 @@
       margin-top: 3vw;
     }
 
-    &.page-main-button--mobile {
-      margin-top: 11vw;
-    }
+    //&.page-main-button--mobile {
+    //  margin-top: 11vw;
+    //}
 
     @include hover {
       background-color: lighten($yellow, 10%);

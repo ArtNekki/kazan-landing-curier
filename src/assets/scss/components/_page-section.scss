@@ -1,24 +1,31 @@
 .page-section {
-  margin-top: 5vw;
+  //margin-top: 5vw;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
-    margin-top: 6vw;
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin-top: 6.5vw;
+    margin-top: 8vw;
   }
 
   @include media-breakpoint-up(xxl) {
-    margin-top: 7.5vw;
+    margin-top: 9vw;
   }
 
-  //&--partners {
-  //  @include media-breakpoint-up(md) {
-  //    background-color: $white;
-  //  }
+  //@include media-breakpoint-up(xl) {
+  //  margin-top: 6.5vw;
   //}
+  //
+  //@include media-breakpoint-up(xxl) {
+  //  margin-top: 7.5vw;
+  //}
+
+  &--partners {
+    margin-bottom: 29vw;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+      //background-color: $white;
+    }
+  }
 
 
 
@@ -54,20 +61,28 @@
     line-height: 9vw;
     font-weight: 700;
 
-    @include media-breakpoint-up(sm) {
-      font-size: 50px;
-      line-height: 50px;
-    }
+    //@include media-breakpoint-up(sm) {
+    //  font-size: 50px;
+    //  line-height: 50px;
+    //}
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 2vw;
       font-size: 3.5vw;
       line-height: 4vw;
     }
+
+    .page-section--advantages & {
+      margin-bottom: 10vw;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &-title br {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: none;
     }
   }
