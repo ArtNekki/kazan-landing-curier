@@ -33,7 +33,7 @@
 
   &-inner {
     @extend .container;
-    margin-bottom: 20vw;
+    margin-bottom: 18vw;
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 0;

@@ -19,7 +19,12 @@
   //}
 
   &--partners {
-    margin-bottom: 30vw;
+    margin-bottom: 29vw;
+
+    @include media-breakpoint-up(sm) {
+      //margin-bottom: 35vw;
+      //background-color: $white;
+    }
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 0;
